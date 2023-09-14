@@ -1,17 +1,46 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const PizzaData = [
+  {
+    name: "Rocacica",
+    ingredients: "Bread with Italian",
+    price: "6",
+    photoName: "x.jpg",
+    soldout: false,
+  },
+  {
+    name: "Margherita",
+    ingredients: "Bread with Italian",
+    price: "16",
+    photoName: "y.jpg",
+    soldout: false,
+  },
+  {
+    name: "Spinaci",
+    ingredients: "Bread with Italian",
+    price: "26",
+    photoName: "z.jpg",
+    soldout: false,
+  },
+];
+function Pizza() {
+  return (
+    <div>
+      <img src="none" alt="Hello I'm image" />
+      <h2>Pizza Name</h2>
+      <p>Pizza Price : 6</p>
+    </div>
+  );
+}
+function App() {
+  return (
+    <div>
+      <h1>Hello World</h1>
+      <Pizza />
+      <Pizza />
+    </div>
+  );
+}
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<App />);
