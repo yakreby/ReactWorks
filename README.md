@@ -1,5 +1,5 @@
 # ReactWorks
-React studies from beginning to advanced
+React studies from the beginning to advanced
 
 Includes;
 
